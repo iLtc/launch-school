@@ -6,7 +6,20 @@ def valid_number?(num)
   num.to_i != 0
 end
 
-prompt("Welcome to Calculator!")
+prompt("Welcome to Calculator! What's your name?")
+
+name = nil
+loop do
+  name = gets.chomp
+
+  if name.empty?
+    prompt("Make sure to use a valid name.")
+  else
+    break
+  end
+end
+
+prompt("Hi #{name}!")
 
 loop do # main loop
   num1 = num2 = nil
