@@ -2,13 +2,35 @@ def prompt(message)
   puts "=> #{message}"
 end
 
+def valid_number?(num)
+  num.to_i != 0
+end
+
 prompt("Welcome to Calculator!")
 
-prompt("What's the first number?")
-num1 = gets.chomp
+num1 = num2 = nil
 
-prompt("What's the second number?")
-num2 = gets.chomp
+loop do
+  prompt("What's the first number?")
+  num1 = gets.chomp
+
+  if valid_number?(num1)
+    break
+  else
+    prompt("That doesn't look like a valid number!")
+  end
+end
+
+loop do
+  prompt("What's the second number?")
+  num2 = gets.chomp
+
+  if valid_number?(num2)
+    break
+  else
+    prompt("That doesn't look like a valid number!")
+  end
+end
 
 prompt("What operation would you like to perform? 1) add 2) subtract 3) multiply 4) divide")
 operator = gets.chomp.to_i
