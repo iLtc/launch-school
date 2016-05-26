@@ -1,12 +1,16 @@
-puts 'Welcome!'
+def prompt(message)
+  puts "=> #{message}"
+end
 
-print 'First Number: '
+prompt("Welcome to Calculator!")
+
+prompt("What's the first number?")
 num1 = gets.chomp
 
-print 'Second Number: '
+prompt("What's the second number?")
 num2 = gets.chomp
 
-print 'Operation (1-add 2-subtract 3-multiply 4-divide): '
+prompt("What operation would you like to perform? 1) add 2) subtract 3) multiply 4) divide")
 operator = gets.chomp.to_i
 
 result =  case operator
@@ -21,4 +25,4 @@ result =  case operator
             num1.to_f / num2.to_f
           end
 
-puts "The result is #{result}"
+prompt("The result is #{result}")
