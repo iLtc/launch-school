@@ -1,0 +1,1 @@
+puts "Exception handling can be used to handle errors in the program instead of just stopping running the program."

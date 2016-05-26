@@ -1,0 +1,1 @@
+puts '"my_hash"\'s key is "x" while "my_hash2"\'s key is the value of "x".'

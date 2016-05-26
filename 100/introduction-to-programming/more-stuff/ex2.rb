@@ -1,0 +1,1 @@
+puts "The program will print noting to the screen. But it will return a proc object."

@@ -1,0 +1,1 @@
+puts "Hash has key and value pairs while Array only has values."

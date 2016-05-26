@@ -1,0 +1,1 @@
+puts "I prefer ruby-doc.org since it is official and organized."

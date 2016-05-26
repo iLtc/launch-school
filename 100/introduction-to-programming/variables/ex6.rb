@@ -1,0 +1,1 @@
+puts "The variable or method 'shoes' has not been defined and cannot be used."
